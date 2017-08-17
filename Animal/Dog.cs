@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Animal
 {
-    class Dog : Animal, ISound
+    class Dog : Animal
     {
         public Dog(int age, string name, bool sex) : base(age, name, sex)
         {
         }
 
-        public void Sound()
+        public override void Sound()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Dog sound is Go go");
         }
     }
 }

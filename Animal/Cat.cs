@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Animal
 {
-    class Cat : Animal, ISound
+    class Cat : Animal
     {
         public Cat(int age, string name, bool sex) : base(age, name, sex)
         {
         }
 
-        public void Sound()
+        public override void Sound()
         {
             Console.WriteLine("Cat sound is meo meo");
         }

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Animal
 {
-    class Animal
+    abstract class Animal : ISound
     {
         private int age;
         private string name;
@@ -48,13 +49,16 @@ namespace Animal
             }
         }
         //contructor
-        public Animal(int age,string name,bool sex)
+        public Animal(int age, string name, bool sex)
         {
             this.age = age;
             this.name = name;
             this.sex = sex;
         }
 
-       
+
+        public abstract void Sound();
+
+
     }
 }

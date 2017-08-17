@@ -10,7 +10,11 @@ namespace Animal
     {
         public Kitten(int age, string name, bool sex) : base(age, name, false)
         {
-           
+
+        }
+        public override void Sound()
+        {
+            Console.WriteLine("Kitten sound is kit kit");
         }
     }
 }

@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace Animal
 {
-    class Frog : Animal, ISound
+    class Frog : Animal
     {
-       // bool 
+        // bool 
         public Frog(int age, string name, bool sex) : base(age, name, sex)
         {
 
         }
 
-        void ISound.Sound()
+        public override void Sound()
         {
             Console.WriteLine("Frog sound is frog frog");
         }
+
+
     }
 }
